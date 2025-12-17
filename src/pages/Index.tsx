@@ -1,12 +1,31 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import Navigation from "@/components/linvex/Navigation";
+import Hero from "@/components/linvex/Hero";
+import LogoMarquee from "@/components/linvex/LogoMarquee";
+import BentoGrid from "@/components/linvex/BentoGrid";
+import UniversalIntegration from "@/components/linvex/UniversalIntegration";
+import ProductShowcase from "@/components/linvex/ProductShowcase";
+import Pricing from "@/components/linvex/Pricing";
+import Testimonials from "@/components/linvex/Testimonials";
+import ContactForm from "@/components/linvex/ContactForm";
+import Footer from "@/components/linvex/Footer";
+import ScrollProgress from "@/components/linvex/ScrollProgress";
 
 const Index = () => {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="mb-4 text-4xl font-bold">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
+    <div className="noise-overlay">
+      <ScrollProgress />
+      <Navigation />
+      <main>
+        <Hero />
+        <LogoMarquee />
+        <BentoGrid />
+        <UniversalIntegration />
+        <ProductShowcase />
+        <Pricing />
+        <Testimonials />
+        <ContactForm />
+      </main>
+      <Footer />
     </div>
   );
 };
